@@ -4,9 +4,9 @@ if __name__ == '__main__':
     moscowpython = Channel('UC-OVMPlMA3-YCIeg4z5z23A')
 
     # получаем значения атрибутов
-    print(moscowpython.title)  # MoscowPython
-    print(moscowpython.video_count)  # 685 (может уже больше)
-    print(moscowpython.url)  # https://www.youtube.com/channel/UC-OVMPlMA3-YCIeg4z5z23A
+    print(moscowpython.ch_name)  # MoscowPython
+    print(moscowpython.ch_vives_amount)  # 685 (может уже больше)
+    print(moscowpython.ch_url)  # https://www.youtube.com/channel/UC-OVMPlMA3-YCIeg4z5z23A
 
     # менять не можем
     moscowpython.channel_id = 'Новое название'
