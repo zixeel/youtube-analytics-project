@@ -43,3 +43,29 @@ class Channel:
     @classmethod
     def get_service(cls):
         return cls.youtube
+
+    def __str__(self):
+        return f"{self.ch_name}({self.ch_url})"
+
+    def __add__(self, other):
+        return int(self.ch_followers) + int(other.ch_followers)
+
+    def __sub__(self, other):
+        return int(self.ch_followers) - int(other.ch_followers)
+
+    def __eq__(self, other):
+        return self.ch_followers == other.ch_followers
+
+    def __lt__(self, other):
+        return self.ch_followers < other.ch_followers
+
+    def __gt__(self, other):
+        return self.ch_followers > other.ch_followers
+
+    def __le__(self, other):
+        return self.ch_followers <= other.ch_followers
+
+    def __ge__(self, other):
+        return self.ch_followers >= other.ch_followers
+
+
